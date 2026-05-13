@@ -1,0 +1,146 @@
+/* MAIN CONTAINER */
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 30px 20px;
+}
+
+/* INNER */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* TOP */
+.main-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main-top h2 {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* FIX: scoped button */
+.main-top button {
+  padding: 10px 14px;
+  background-color: #0095ff;
+  color: #fff;
+  border: 1px solid #007cd4;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-top button:hover {
+  background-color: #007cd4;
+}
+
+/* DESCRIPTION */
+.main-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+/* FILTER */
+.main-filter {
+  display: flex;
+  align-items: center;
+}
+
+/* TABS */
+.main-tabs {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-right: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main-tab {
+  padding: 6px 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.main-tab:last-child {
+  border-right: none;
+}
+
+.main-tab a {
+  font-size: 13px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.main-tab:hover {
+  background-color: #f1f2f3;
+}
+
+/* FILTER BUTTON */
+.main-filter-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  border: 1px solid #0095ff;
+  border-radius: 4px;
+  background-color: #00ccff17;
+  font-size: 13px;
+  color: #007cd4;
+  cursor: pointer;
+}
+
+.main-filter-item:hover {
+  background-color: #007cd4;
+  color: white;
+}
+
+/* QUESTIONS LIST */
+.questions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.question {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* FIX: code blocks */
+pre {
+  width: 100%;
+  overflow-x: auto;
+  background: #f6f6f6;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .main {
+    padding: 20px 10px;
+  }
+
+  .main-desc {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .main-filter {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
