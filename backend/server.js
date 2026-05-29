@@ -24,7 +24,7 @@ const __dirname = path.dirname(__filename);
 // =======================
 app.use(
   cors({
-    origin: "*", // change to your frontend URL later (recommended)
+    origin: "*", 
     credentials: true,
   })
 );
